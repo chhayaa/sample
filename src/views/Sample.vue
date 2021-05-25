@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="sample-page">
-        <div class="row navbar"><navigation-bar></navigation-bar></div>
+        <div class="row nav-bar"><navigation-bar></navigation-bar></div>
         <div class="row banner">
             <banner-img>
             </banner-img>
