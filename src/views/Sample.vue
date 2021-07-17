@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <div class="sample-page">
-      <div class="row nav-bar"><navigation-bar></navigation-bar></div>
+      <div class="row nav-bar">
+        <navigation-bar></navigation-bar>
+      </div>
       <div class="row banner">
-        <banner-img> </banner-img>
+        <banner-img></banner-img>
       </div>
       <div class="row card-tile">
         <div class="col-md-3">
@@ -16,19 +18,26 @@
             dark
             small
             @click="visible = !visible"
-          >
-            Toggle Component
-          </button>
-          <my-card v-if="visible"> </my-card>
+          >Toggle Component</button>
+          <my-card v-if="visible"></my-card>
         </div>
-        <div class="col-md-3"><my-card> </my-card></div>
-        <div class="col-md-3"><my-card> </my-card></div>
-        <div class="col-md-3"><my-card> </my-card></div>
+        <div>{content}</div>
+        <div class="col-md-3">
+          <my-card></my-card>
+        </div>
+        <div class="col-md-3">
+          <my-card></my-card>
+        </div>
+        <div class="col-md-3">
+          <my-card></my-card>
+        </div>
       </div>
       <div class="row table-form">
-        <div class="col-md-3"><list-name></list-name></div>
+        <div class="col-md-3">
+          <list-name></list-name>
+        </div>
         <div class="col-md-9">
-          <login-form> </login-form>
+          <login-form></login-form>
         </div>
       </div>
     </div>
