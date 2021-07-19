@@ -7,7 +7,7 @@ import navigation_bar from "./components/navigation_bar";
 import banner_img from "./components/banner_img";
 import login_form from "./components/login_form";
 import list_name from "./components/list_name";
-import io from "socket.io-client";
+//import io from "socket.io-client";
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
@@ -28,13 +28,13 @@ Vue.component("banner-img", banner_img);
 Vue.component("login-form", login_form);
 Vue.component("list-name", list_name);
 
-const socket = io("http://localhost:3001");
+//const socket = io("http://localhost:3001");
 // socket.emit("chat message", (msg) => {
 //   console.log(msg);
 // });
-socket.on("content-created", (content) => {
-  console.log(content);
-});
+// socket.on("content-created", (comment) => {
+//   console.log(comment);
+// });
 
 // socket.on("connect", () => {
 //   console.log(`${socket.id}`);
